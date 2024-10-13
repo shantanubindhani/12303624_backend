@@ -8,6 +8,7 @@ if [ -d "./dev" ]; then
     else
         echo "No Test Directory Found.";
     fi
+    echo "process PID : $MAIN_PID"
     wait $MAIN_PID
 else 
     echo "No Dev Directory Found.";
